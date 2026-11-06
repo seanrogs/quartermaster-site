@@ -1,0 +1,53 @@
+# Table of contents for the User Guide sidebar. Each id must match a heading id in user-guide.md.
+- title: Getting started
+  items:
+    - { id: overview, title: How Quartermaster works }
+    - { id: install-a-game-system-or-faction-template, title: Install game systems and factions }
+    - { id: download-a-game-system-or-faction-template, title: Install from the Templates website }
+    - { id: find-your-way-around, title: Find your way around }
+- title: Drafts
+  items:
+    - { id: create-a-new-draft, title: Create a draft }
+    - { id: draft-menu, title: Rename, duplicate and delete }
+    - { id: add-notes-to-a-draft, title: Add notes to a draft }
+    - { id: undo, title: Undo changes }
+- title: Units
+  items:
+    - { id: enlist-units-to-a-draft, title: Add units }
+    - { id: add-units-from-another-faction, title: Other factions and roles }
+    - { id: manage-units, title: Duplicate, delete and rearrange }
+- title: Configuring a unit
+  items:
+    - { id: set-a-units-size, title: Set a unit’s size }
+    - { id: equip-unit-options-and-upgrades, title: Options and upgrades }
+    - { id: equip-special-items, title: Armoury items }
+    - { id: attach-a-sub-unit, title: Attach a sub-unit }
+    - { id: personalise-a-unit, title: Aliases, custom equipment and notes }
+- title: Checking a draft
+  items:
+    - { id: points-breakdown, title: Points breakdown }
+    - { id: highlight-errors, title: Highlight errors }
+    - { id: percentages, title: Percentages and targets }
+    - { id: detachments, title: Detachments }
+- title: Playing
+  items:
+    - { id: conditions, title: Conditions and victory points }
+    - { id: experience-points, title: Experience points }
+    - { id: lookups, title: Rules lookups }
+- title: Publish and share
+  items:
+    - { id: summarize-or-publish-a-draft, title: Publish a PDF or summary }
+    - { id: share-a-draft, title: Share a draft file }
+    - { id: keyboard-shortcuts, title: Keyboard shortcuts }
+- title: Making your own
+  items:
+    - { id: configure-a-faction, title: Configure a faction }
+    - { id: configure-a-unit, title: Configure a unit }
+    - { id: create-a-new-faction, title: Create a game system or faction }
+    - { id: share-a-faction, title: Share and contribute }
+    - { id: work-with-tallies, title: Tallies }
+    - { id: advanced-game-and-faction-editing, title: Advanced settings }
+- title: Help
+  items:
+    - { id: icloud, title: iCloud and storage }
+    - { id: get-help, title: Get in touch }

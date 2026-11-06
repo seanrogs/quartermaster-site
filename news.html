@@ -1,0 +1,25 @@
+---
+layout: default
+title: News
+permalink: /news
+redirect_from:
+  - /archive
+  - /page/2
+description: Release notes, template updates and tips from Quartermaster.
+---
+<div class="wrap prose page">
+  <h1>News</h1>
+  <p class="lede">Release notes, template updates and tips. Subscribe with the <a href="{{ '/feed.xml' | relative_url }}">RSS feed</a>.</p>
+  {% assign years = site.posts | group_by_exp: "p", "p.date | date: '%Y'" %}
+  {% for year in years %}
+  <h2 class="news-year">{{ year.name }}</h2>
+  <ul class="news-list">
+    {% for post in year.items %}
+    <li><a href="{{ post.url | relative_url }}">
+      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%-d %B' }}</time>
+      <strong>{{ post.title }}</strong>
+    </a></li>
+    {% endfor %}
+  </ul>
+  {% endfor %}
+</div>

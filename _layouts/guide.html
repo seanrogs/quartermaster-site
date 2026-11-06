@@ -1,0 +1,28 @@
+---
+layout: default
+---
+<div class="wrap guide">
+  <aside class="guide-toc" aria-label="User guide contents">
+    <details open>
+      <summary>Contents</summary>
+      {% for section in site.data.guide %}
+      <p class="toc-heading">{{ section.title }}</p>
+      <ul>
+        {% for item in section.items %}<li><a href="#{{ item.id }}">{{ item.title }}</a></li>{% endfor %}
+      </ul>
+      {% endfor %}
+    </details>
+  </aside>
+  <article class="prose guide-body">
+    <h1>{{ page.title }}</h1>
+    {% if page.lede %}<p class="lede">{{ page.lede }}</p>{% endif %}
+    {{ content }}
+  </article>
+</div>
+<script>
+  // Collapse the contents on narrow screens so the guide starts with content, not a long list.
+  (function () {
+    var d = document.querySelector('.guide-toc details');
+    if (d && window.matchMedia('(max-width: 899px)').matches) d.removeAttribute('open');
+  })();
+</script>

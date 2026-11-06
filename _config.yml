@@ -1,0 +1,45 @@
+title: Quartermaster
+tagline: Tabletop miniature management
+description: >-
+  Quartermaster is the army list manager for tabletop miniature games that knows how to play nice.
+  Draft armies for Warhammer: The Old World, Horus Heresy, Necromunda and more on iPhone and iPad.
+url: https://quartermaster.app
+baseurl: ""
+timezone: Australia/Brisbane
+lang: en-AU
+
+app_store_url: https://apps.apple.com/app/quartermaster/id879731050
+templates_url: https://templates.quartermaster.app
+support_email: support@quartermaster.app
+contribute_email: contribute@quartermaster.app
+donate_url: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=SG9N5GMDHLFJN
+instagram_url: https://www.instagram.com/quartermasterapp/
+author_url: https://www.seanr.org
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  auto_ids: true
+  hard_wrap: false
+
+plugins:
+  - jekyll-redirect-from
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+feed:
+  path: feed.xml
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor

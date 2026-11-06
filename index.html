@@ -1,0 +1,74 @@
+---
+layout: default
+title: Quartermaster
+description: The army list manager for tabletop miniature games that knows how to play nice. Draft armies on iPhone and iPad with community-made game systems and factions.
+---
+<section class="wrap hero">
+  <div>
+    <img class="hero-icon" src="{{ '/assets/img/icon.png' | relative_url }}" alt="Quartermaster app icon" width="88" height="88">
+    <h1>Your armies, in order.</h1>
+    <p>Quartermaster is the army list manager for tabletop miniature games that knows how to play nice. Draft a force whenever inspiration strikes, and have every unit ready when it’s time to play.</p>
+    <div class="hero-actions">
+      <a class="button" href="{{ site.app_store_url }}">Download on the App Store</a>
+      <a class="button secondary" href="{{ '/user-guide' | relative_url }}">Read the User Guide</a>
+    </div>
+    <p class="hero-meta">For iPhone and iPad. Also runs on Apple silicon Macs.</p>
+  </div>
+  <div class="phones" aria-hidden="true">
+    <img src="{{ '/assets/screens/draft.jpg' | relative_url }}" alt="" width="640" height="1391" loading="eager">
+    <img src="{{ '/assets/screens/unit.jpg' | relative_url }}" alt="" width="640" height="1391" loading="lazy">
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <h2>Built by wargamers, for wargamers</h2>
+    <p class="sub">Every game system and faction template is made and shared by the Quartermaster community. If something’s missing, you can fix it yourself, right in the app.</p>
+    <div class="features">
+      <div class="feature"><span class="icon">🎲</span><h3>Community templates</h3><p>Browse, install and update game systems and factions without leaving the app.</p></div>
+      <div class="feature"><span class="icon">📇</span><h3>Draft with cards</h3><p>Every unit is a card with profiles, options and rules. Collapse it down to just the essentials.</p></div>
+      <div class="feature"><span class="icon">✅</span><h3>Check your list</h3><p>Points breakdowns, role percentages, targets and highlighted errors. Quartermaster never gets in your way.</p></div>
+      <div class="feature"><span class="icon">🏆</span><h3>Track your games</h3><p>Conditions, victory points and experience for one-off games and long campaigns.</p></div>
+      <div class="feature"><span class="icon">🖨️</span><h3>Publish and share</h3><p>Roster table and card PDFs, text summaries for events, and draft files for your friends.</p></div>
+      <div class="feature"><span class="icon">🛠️</span><h3>Make your own</h3><p>Configure any faction or create a whole new game system, then share it with the community.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <h2>Games in the catalogue</h2>
+    <p class="sub">A growing list of community-made templates, including:</p>
+    <ul class="games">
+      <li>Warhammer: The Old World</li>
+      <li>Horus Heresy (all editions)</li>
+      <li>Necromunda</li>
+      <li>Warhammer Fantasy Battles</li>
+      <li>Warhammer 40,000 (many editions)</li>
+      <li>The Lord of the Rings</li>
+      <li>X-Wing</li>
+      <li>Trench Crusade</li>
+      <li>Kings of War</li>
+      <li>Mordheim</li>
+      <li>Epic</li>
+      <li>Bolt Action</li>
+      <li><a href="{{ site.templates_url }}">and more…</a></li>
+    </ul>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <h2>News</h2>
+    <p class="sub">The latest from Quartermaster. <a href="{{ '/news' | relative_url }}">All news →</a></p>
+    <ul class="news-list">
+      {% for post in site.posts limit:4 %}
+      <li><a href="{{ post.url | relative_url }}">
+        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%-d %B %Y' }}</time>
+        <strong>{{ post.title }}</strong>
+        <span class="excerpt">{{ post.excerpt | strip_html | truncatewords: 26 }}</span>
+      </a></li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
