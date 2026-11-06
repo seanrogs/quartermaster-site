@@ -15,7 +15,7 @@
   items:
     - { id: enlist-units-to-a-draft, title: Add units }
     - { id: add-units-from-another-faction, title: Other factions and roles }
-    - { id: manage-units, title: Duplicate, delete and rearrange }
+    - { id: manage-units, title: Duplicate, move and rearrange }
 - title: Configuring a unit
   items:
     - { id: set-a-units-size, title: Set a unit’s size }
@@ -23,6 +23,11 @@
     - { id: equip-special-items, title: Armoury items }
     - { id: attach-a-sub-unit, title: Attach a sub-unit }
     - { id: personalise-a-unit, title: Aliases, custom equipment and notes }
+- title: Your army
+  items:
+    - { id: traits, title: Traits }
+    - { id: links, title: Links }
+    - { id: themes, title: Themes }
 - title: Checking a draft
   items:
     - { id: points-breakdown, title: Points breakdown }
