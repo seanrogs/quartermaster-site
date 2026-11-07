@@ -28,4 +28,4 @@ Most army list apps are *restrictive*: they force you to build an army one speci
 
 Quartermaster has been designed, developed and supported by one person, [Sean Rogers]({{ site.author_url }}), since 2011. If you enjoy it, please consider [leaving a review]({{ site.app_store_url }}?action=write-review) or [making a donation]({{ '/donate' | relative_url }}).
 
-<p><a class="button" href="{{ site.app_store_url }}">Download on the App Store</a></p>
+<p>{% include app-store-badge.html %}</p>

@@ -1,0 +1,7 @@
+{%- comment -%} Apple's official badge, from toolbox.marketingtools.apple.com. Black on light backgrounds, white on dark, per Apple's guidelines. Don't restyle it. {%- endcomment -%}
+<a class="app-store-badge" href="{{ site.app_store_url }}">
+  <picture>
+    <source srcset="{{ '/assets/img/app-store-badge-white.svg' | relative_url }}" media="(prefers-color-scheme: dark)">
+    <img src="{{ '/assets/img/app-store-badge-black.svg' | relative_url }}" alt="Download on the App Store" width="150" height="50">
+  </picture>
+</a>
