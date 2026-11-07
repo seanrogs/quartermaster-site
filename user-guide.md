@@ -35,7 +35,7 @@ The same browser shows when an installed template has an update. Tap the button 
 
 ## Install from the Templates website {#download-a-game-system-or-faction-template}
 
-Some older or less popular templates are only on the [Quartermaster Templates]({{ site.templates_url }}) website. Some of them are no longer maintained.
+Some older templates are only on the [Quartermaster Templates]({{ site.templates_url }}) website. Many of them are no longer maintained.
 
 1. Open [Quartermaster Templates]({{ site.templates_url }}) in Safari.
 2. Tap the game system or faction you want, then confirm the download. Remember you need both a game system and a faction.
@@ -48,7 +48,7 @@ You can also open a Quartermaster game system, faction or draft file from Files,
 
 The **Library** is the starting view. It shows:
 
-- **Recent Drafts** and **Recent Factions**, to jump straight back to what you were working on. On iPad, Recent Drafts is in the sidebar.
+- **Recent Drafts** and **Recent Factions**, to jump straight back to what you were working on. On iPad, use the Recent Drafts link in the sidebar to show them in the detail view.
 - **Game Systems**: expand a game system to see its factions, or tap its name to open it. Tap a faction to see its drafts.
 - A **search field**, which searches across game systems, factions and draft names.
 
@@ -157,7 +157,7 @@ When the draft has [traits](#traits) chosen, options and armoury items meant for
 
 ## Armoury items {#equip-special-items}
 
-Some units can choose items from a shared pool. Examples are magic items in Warhammer: The Old World, skills in Necromunda, or upgrade cards in X-Wing.
+Some units can choose items from a common pool, usually with a maximum allowance of points or choices. Examples of this are magic items in Warhammer: The Old World, skills and equipment lists in Necromunda, or wargear lists in Horus Heresy.
 
 1. In the unit view, tap an armoury category, such as **Magic Items**. Units with several categories show a summary of what's equipped in each one.
 2. Tap an item to add it. Tap again to add another, if the item allows it.
