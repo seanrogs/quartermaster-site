@@ -2,6 +2,8 @@
 layout: guide
 title: User Guide
 permalink: /user-guide
+redirect_from:
+  - /userguide
 lede: Everything you need to draft, play and share your forces with Quartermaster 6.7.
 description: How to use Quartermaster to install game systems, draft armies, track games and campaigns, and build your own factions.
 ---

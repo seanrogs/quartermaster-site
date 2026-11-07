@@ -63,5 +63,5 @@ Then open http://localhost:4000/quartermaster-site/ (or http://localhost:4000 on
 
 - `/get` redirects to the App Store
 - `/privacy` redirects to seanr.org/privacy
-- `/support` redirects to `/donate`, and `/archive` redirects to `/news` (Tumblr URLs)
+- `/support` redirects to `/donate`, `/archive` to `/news`, and `/userguide` to `/user-guide` (Tumblr URLs, still used by templates.quartermaster.app)
 - `www.quartermaster.app/user-guide` is linked from the app (`Links.swift`), so keep `/user-guide`.
