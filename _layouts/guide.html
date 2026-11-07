@@ -21,8 +21,13 @@ layout: default
 </div>
 <script>
   // Collapse the contents on narrow screens so the guide starts with content, not a long list.
+  // On wide screens the toggle is hidden, so the list must always be open there.
   (function () {
     var d = document.querySelector('.guide-toc details');
-    if (d && window.matchMedia('(max-width: 899px)').matches) d.removeAttribute('open');
+    if (!d) return;
+    var narrow = window.matchMedia('(max-width: 899px)');
+    function update() { d.open = !narrow.matches; }
+    update();
+    narrow.addEventListener('change', update);
   })();
 </script>
