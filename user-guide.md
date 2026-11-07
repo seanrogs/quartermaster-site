@@ -242,7 +242,7 @@ Tap **Breakdown › Highlight errors**. Quartermaster then highlights anything t
 
 - a role outside its limits, like too few Core units, or more than the allowed percentage of Characters
 - too many of a group of units, like more than 0–3 of two units per 1,000 points
-- roles out of balance with each other, like more Elites than Troops
+- roles out of balance with each other, like more Champions than Gangers
 - a unit or detachment worth more than its share of the points, like a character over 25% of the army
 - too many units of the same name, when a trait sets a limit
 - a [link](#links) that's missing
@@ -356,9 +356,9 @@ In the configuration you can edit the faction's name, its units in each role, it
   - Set a profile adjustment, like `M+1`, for units whose special rules include the trait in brackets, like `[Legion]`.
   - Add **Role Limits** that apply while it's chosen: a **percentage limit** caps how much of the army each unit in a role may be, and a **duplicate limit** caps how many units of the same name a role may have.
   - Turn on **Allow single restricted unit** to allow one unit the points would otherwise rule out, like a 0–1 per 1,000 points unit in a 750 point game.
-- **Add Role Comparison** checks roles against each other. For example, "Elites and Fast Attack must be at most Troops", with optional multipliers and extra allowances.
+- **Add Role Comparison** checks roles against each other. For example, "Champions and Brutes must be at most equal to Gangers", with optional multipliers and extra allowances.
 
-To make a unit, option or item belong to a variant, put the variant's name in its requirements, like `Blood Angels`. To rule a variant out, put `!` in front, like `!Blood Angels`. The Add list and unit view then show or hide it to match each draft's choices.
+To make a unit, option or item belong to a variant, put the variant's name in its requirements, like `Blood Angels`. The Add list and unit view then show or hide it to match each draft's choices.
 
 > Changes to a faction don't update drafts you've already made. Add the unit again to pick up the new settings.
 
@@ -370,7 +370,16 @@ To configure a game system, tap its name in the Library to open it. Then tap the
 2. Tap the unit in its role.
 3. Change its name, size, points, profile, special rules, options and armoury allowances.
 
-Each unit has a **size type**: single model, constant size, variable size, variable size with no maximum, grouping of multiple units, or detachment definition. The points can be set per model or per unit.
+Each unit has a **size type**:
+
+- **single model:** the unit only contains one model, like a character, a monster, or a vehicle.
+- **constant size:** the unit has multiple models, but the size can't be changed.
+- **variable size:** the unit has multiple models, and the size can be changed from a starting size up to a set maximum.
+- **variable size with no maximum:** the unit has multiple models, and the size can be changed from a starting size, but there is no maximum model cap to the unit.
+- **grouping of multiple units:** the unit is made up of multiple sub-units. Useful for constructing a vehicle squadron or just as an affordance to reduce clutter.
+- **detachment definition:** rather than a unit, this allows you to define a [detachment](#detachments), that is itself a collection of units arranged by roles.
+
+The points can be set per model or per unit.
 
 Options and armoury items can be added one at a time, copied from another unit, or pasted from text using **Generate from clipboard**.
 
@@ -392,8 +401,9 @@ Made something others would enjoy? Email it to [{{ site.contribute_email }}](mai
 
 ## Tallies {#work-with-tallies}
 
-Tallies count something other than points across a draft. For example:
+Tallies count something that needs to be accumulated other than points across a draft. For example:
 
+- Unit Strength in Warhammer: The Old World
 - Power Rating in Warhammer 40,000
 - the number of models with ranged weapons in The Lord of the Rings
 - the total number of infantry, cavalry or vehicles in any game
@@ -422,11 +432,22 @@ To remove a tally, swipe left on it.
 
 **Starting XP:** in **Advanced Configuration**, under **Campaign Settings**, set how much [experience](#experience-points) the unit starts with.
 
-**How often an option can be equipped:** in an option's settings, **Equip** can be set to once only, the entire unit, up to a set maximum, up to the unit's size, up to a multiple of the unit's size, or the same as the previous option. With **up to set maximum**, you can also set a **Minimum**: the option starts already equipped that many times.
+**How often an option can be equipped:** in an option's settings, choose how the **Equip** action works for the option:
+
+- **once only:** the unit may only take one of this option.
+- **the entire unit:** every model in the unit takes this option: you can't have some models with it and some without. The cost gets multiplied by the size of the unit plus any non-included Command models (see below).
+- **up to a set maximum:** the unit may only take a certain number of this option, such as two special weapons. You can also set a **Minimum**: the option starts already equipped that many times.
+- **up to the unit's size:** each model may take one of these options. As you equip, the number counts up until it reaches the size of the unit, then resets.
+- **up to a multiple of the unit's size:** each model may take multiple of these options. As you equip, the number counts up until it reaches a number equal to the number multiplied by the size of the unit, then resets.
+- **the same as the previous option:** treat this option the same as the previous in the list of alternatives. With every option except the first set to this setting, the total number of all equipped options in the list of alternatives must satisfy the first option's setting. This is the default setting: having a mix of equip types in the same list of alternatives may not work as expected.
+
+The unit starts with any options that are **equipped by default**, and these cannot be unequipped.
+
+For Command options, use **included in unit size** to differentiate between a model that is counted with the other members of the unit, or that is singled out and counted separately. This is to differentiate between "10 Spearmen, including a Champion" and "1 Sergeant and 9 Space Marines". This affects how the equip types work.
 
 **Points multipliers:** in a unit's configuration, tap **Set multiplier** to add a multiplier that scales the unit's whole cost. Give it a name, choose how to round the result, and choose whether it's equipped by default.
 
-**Detachment definitions:** set a unit's size type to **detachment definition** to make it a Detachment that other units are added into. Detachment definitions are marked with a flag icon in the faction's role list.
+**Detachment definitions:** set a unit's size type to **detachment definition** to make it a Detachment that other units are added into. Detachment definitions are marked with a flag icon in the faction's role list to differentiate them from normal units.
 
 **Conditions:** in a game system's configuration, under **Unit Conditions**, tap **Add a set of Conditions**. Each Condition can shade the unit, show up separately in totals, and award victory points, either fixed or as a percentage of the unit's cost, to you or your opponent.
 
