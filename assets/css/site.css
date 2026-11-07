@@ -14,7 +14,8 @@
   --max: 1120px;
   --prose: 720px;
   --font: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  --font-display: ui-serif, "New York", "Iowan Old Style", Georgia, serif;
+  /* Futura ships with iOS and macOS (the app's logo uses Futura Medium); others fall back to similar geometric fonts. */
+  --font-display: Futura, "Futura PT", "Century Gothic", "Avenir Next", var(--font);
   color-scheme: light;
 }
 
@@ -62,12 +63,12 @@ a:hover { color: var(--accent-strong); }
   border-bottom: 1px solid var(--line);
 }
 .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 60px; flex-wrap: wrap; }
-.brand { display: flex; align-items: center; gap: 10px; color: var(--text); text-decoration: none; font-weight: 700; letter-spacing: -0.01em; }
+.brand { display: flex; align-items: center; gap: 10px; color: var(--text); text-decoration: none; font-family: var(--font-display); font-weight: 500; font-size: 19px; }
 .brand img { border-radius: 8px; }
 .site-nav { display: flex; align-items: center; gap: 4px; flex-wrap: wrap; }
-.site-nav a { color: var(--muted); text-decoration: none; font-size: 15px; padding: 6px 10px; border-radius: 999px; }
+.site-nav a { font-family: var(--font-display); font-weight: 500; color: var(--muted); text-decoration: none; font-size: 15px; padding: 6px 10px; border-radius: 999px; }
 .site-nav a:hover, .site-nav a[aria-current] { color: var(--text); background: var(--accent-soft); }
-.site-nav .nav-cta { background: var(--accent); color: #fff; font-weight: 600; }
+.site-nav .nav-cta { background: var(--accent); color: #fff; }
 .site-nav .nav-cta:hover { background: var(--accent-strong); color: #fff; }
 @media (prefers-color-scheme: dark) { .site-nav .nav-cta, .site-nav .nav-cta:hover { color: #1d1a19; } }
 @media (max-width: 640px) {
@@ -84,7 +85,7 @@ a:hover { color: var(--accent-strong); }
 .site-footer p { margin: 0; }
 
 /* Buttons */
-.button { display: inline-flex; align-items: center; gap: 8px; padding: 12px 22px; border-radius: 999px; font-weight: 600; text-decoration: none; background: var(--accent); color: #fff; }
+.button { display: inline-flex; align-items: center; gap: 8px; padding: 12px 22px; border-radius: 999px; font-family: var(--font-display); font-weight: 500; text-decoration: none; background: var(--accent); color: #fff; }
 .button:hover { background: var(--accent-strong); color: #fff; }
 .button.secondary { background: transparent; color: var(--accent); box-shadow: inset 0 0 0 1.5px var(--accent); }
 .button.secondary:hover { background: var(--accent-soft); color: var(--accent); }
@@ -94,7 +95,7 @@ a:hover { color: var(--accent-strong); }
 .hero { display: grid; gap: 40px; align-items: center; padding-top: 56px; padding-bottom: 24px; }
 @media (min-width: 900px) { .hero { grid-template-columns: 1.1fr 0.9fr; padding-top: 88px; padding-bottom: 40px; } }
 .hero-icon { width: 88px; height: 88px; border-radius: 20px; box-shadow: var(--shadow); }
-.hero h1 { font-family: var(--font-display); font-size: clamp(40px, 7vw, 64px); line-height: 1.05; letter-spacing: -0.02em; margin: 24px 0 16px; }
+.hero h1 { font-family: var(--font-display); font-weight: 700; font-size: clamp(40px, 7vw, 64px); line-height: 1.05; margin: 24px 0 16px; }
 .hero p { font-size: 20px; color: var(--muted); max-width: 34em; margin: 0 0 28px; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; }
 .hero .hero-meta { margin: 18px 0 0; font-size: 14px; }
@@ -103,11 +104,11 @@ a:hover { color: var(--accent-strong); }
 .phones img:last-child { transform: translateY(40px); }
 
 .section { padding: 64px 0 0; }
-.section h2 { font-family: var(--font-display); font-size: clamp(28px, 4vw, 38px); letter-spacing: -0.01em; margin: 0 0 8px; }
+.section h2 { font-family: var(--font-display); font-weight: 500; font-size: clamp(28px, 4vw, 38px); margin: 0 0 8px; }
 .section > .wrap > p.sub { color: var(--muted); margin: 0 0 32px; max-width: 40em; }
 .features { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
 .feature { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 22px; }
-.feature h3 { margin: 0 0 6px; font-size: 18px; }
+.feature h3 { font-family: var(--font-display); font-weight: 500; margin: 0 0 6px; font-size: 18px; }
 .feature p { margin: 0; color: var(--muted); font-size: 15px; }
 .feature .icon { font-size: 26px; display: block; margin-bottom: 10px; }
 .games { display: flex; flex-wrap: wrap; gap: 8px; margin: 0; padding: 0; list-style: none; }
@@ -117,17 +118,17 @@ a:hover { color: var(--accent-strong); }
 .news-list li a { display: block; padding: 18px 20px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); text-decoration: none; color: var(--text); }
 .news-list li a:hover { border-color: var(--accent); }
 .news-list time { display: block; font-size: 13px; color: var(--muted); }
-.news-list strong { font-size: 18px; }
+.news-list strong { font-family: var(--font-display); font-weight: 500; font-size: 18px; }
 .news-list .excerpt { display: block; color: var(--muted); font-size: 15px; margin-top: 4px; }
-.news-year { font-family: var(--font-display); font-size: 24px; margin: 40px 0 12px; }
+.news-year { font-family: var(--font-display); font-weight: 500; font-size: 24px; margin: 40px 0 12px; }
 
 /* Prose */
 .prose { max-width: var(--prose); }
 .page, .post { padding-top: 48px; margin-left: auto; margin-right: auto; }
-.prose h1 { font-family: var(--font-display); font-size: clamp(34px, 5vw, 48px); line-height: 1.1; letter-spacing: -0.02em; margin: 0 0 16px; }
-.prose h2 { font-size: 26px; line-height: 1.25; margin: 48px 0 12px; letter-spacing: -0.01em; }
-.prose h3 { font-size: 20px; margin: 32px 0 8px; }
-.prose h4 { font-size: 17px; margin: 24px 0 6px; }
+.prose h1 { font-family: var(--font-display); font-weight: 700; font-size: clamp(34px, 5vw, 48px); line-height: 1.1; margin: 0 0 16px; }
+.prose h2 { font-family: var(--font-display); font-weight: 500; font-size: 26px; line-height: 1.25; margin: 48px 0 12px; }
+.prose h3 { font-family: var(--font-display); font-weight: 500; font-size: 20px; margin: 32px 0 8px; }
+.prose h4 { font-family: var(--font-display); font-weight: 500; font-size: 17px; margin: 24px 0 6px; }
 .prose .lede { font-size: 20px; color: var(--muted); margin-bottom: 32px; }
 .prose img { display: block; margin: 24px auto; border-radius: 12px; border: 1px solid var(--line); max-height: 640px; width: auto; }
 .prose li + li { margin-top: 4px; }
@@ -158,7 +159,7 @@ a:hover { color: var(--accent-strong); }
 .guide-toc details { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 14px 18px; }
 @media (min-width: 900px) { .guide-toc details { background: none; border: 0; padding: 0; } .guide-toc summary { display: none; } }
 .guide-toc summary { font-weight: 600; cursor: pointer; }
-.guide-toc .toc-heading { margin: 16px 0 4px; font-weight: 600; color: var(--text); text-transform: uppercase; font-size: 12px; letter-spacing: 0.06em; }
+.guide-toc .toc-heading { margin: 16px 0 4px; font-family: var(--font-display); font-weight: 500; color: var(--text); text-transform: uppercase; font-size: 12px; letter-spacing: 0.06em; }
 .guide-toc ul { list-style: none; margin: 0; padding: 0; }
 .guide-toc li a { display: block; padding: 3px 0; color: var(--muted); text-decoration: none; }
 .guide-toc li a:hover { color: var(--accent); }
@@ -168,6 +169,6 @@ a:hover { color: var(--accent-strong); }
 .guide-body .figure-row img { width: 260px; margin: 8px 0; }
 .start-steps { counter-reset: step; list-style: none; padding: 0; display: grid; gap: 12px; }
 .start-steps li { counter-increment: step; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 16px 18px 16px 60px; position: relative; margin: 0; }
-.start-steps li::before { content: counter(step); position: absolute; left: 18px; top: 16px; width: 28px; height: 28px; border-radius: 50%; background: var(--accent); color: var(--bg); font-weight: 700; display: grid; place-items: center; font-size: 15px; }
+.start-steps li::before { content: counter(step); position: absolute; left: 18px; top: 16px; width: 28px; height: 28px; border-radius: 50%; background: var(--accent); color: var(--bg); font-family: var(--font-display); font-weight: 500; display: grid; place-items: center; font-size: 15px; }
 .start-steps strong { display: block; }
 .start-steps p { margin: 0; }
