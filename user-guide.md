@@ -201,7 +201,7 @@ Your choices shape the rest of the draft:
 - **Options and items:** upgrades and armoury items for other variants are hidden.
 - **Special rules:** a trait name in brackets, like `[Legiones Astartes]`, is replaced by the variant you chose, like "Raven Guard". This shows on unit cards, the unit view, lookups, summaries and PDFs.
 - **Profiles:** a variant can adjust the characteristics of units that carry its trait, like M+1.
-- **Limits:** a variant can change composition rules, like how much of the army each unit in a role may be, or how many units of the same name a role may have.
+- **Limits:** a variant can change composition rules, like how much of the army each unit in a role may be, how many units of the same name a role may have, or how many units one role may have compared with another.
 - **Colours:** a variant can have its own [theme](#themes), which tints the draft.
 
 **Detachments** have their own trait buttons. They follow the draft's choice, shown as "same as" the draft, until you choose something different for that detachment. Units inside a detachment follow the detachment's choice.
@@ -234,9 +234,10 @@ A theme tints the draft's cards and Add button, and the draft's row in Recent Dr
 The draft's total is shown in the top-right corner. Tap it to see:
 
 - A breakdown of points by role, and by detachment if you use them. Tap a total to expand it.
-- Any **tallies** the faction uses, like Power Rating or model counts. Turn on **Show tallies** to show each unit's tallies on its card. See [Tallies](#work-with-tallies).
+- Any **tallies** the faction uses, like Power Rating or model counts. See [Tallies](#work-with-tallies).
+- **Set target points**, described in [Percentages and targets](#percentages).
 
-The **Breakdown** button in the toolbar has the settings for errors and percentages, described below.
+The **Breakdown** button in the toolbar has the settings for errors, percentages and tallies. Turn on **Breakdown › Show tallies** to show each unit's tallies on its card.
 
 ## Highlight errors {#highlight-errors}
 
@@ -244,11 +245,13 @@ Tap **Breakdown › Highlight errors**. Quartermaster then highlights anything t
 
 - a role outside its limits, like too few Core units, or more than the allowed percentage of Characters
 - too many of a group of units, like more than 0–3 of two units per 1,000 points
-- roles out of balance with each other, like more Champions than Gangers
+- roles out of balance with each other, like more Champions than Gangers, when a chosen trait variant compares them
 - a unit or detachment worth more than its share of the points, like a character over 25% of the army
 - too many units of the same name, when a trait sets a limit
 - a [link](#links) that's missing
 - the draft total, when it's over the [target](#percentages)
+
+Attached units count toward the limits too. A unit is highlighted when it, or something attached to it, breaks a limit.
 
 While errors are highlighted, the **Breakdown** button shows how many there are. Tap **Breakdown › Errors** to see the whole list in one place, grouped by detachment. Highlighted points and role headers open a menu that explains the limit.
 
@@ -258,7 +261,7 @@ Highlighting is a guide only. Quartermaster never stops you from building a draf
 
 Many games limit how much of an army can be spent on each role. Tap **Breakdown › Show percentages** to show each role's share next to its points.
 
-Then choose what the percentages are calculated against:
+To choose what percentages and limits are calculated against, tap **Set target points** in **Breakdown**, or in the menu from the draft's total:
 
 - **Use current total:** the draft's exact total.
 - **Round to next 10, 50 or 100:** the total rounded up. For example, a 1,980 point draft is checked as 2,000.
@@ -349,7 +352,7 @@ In the configuration you can edit the faction's name, its units in each role, it
 - **Per** makes number limits scale with the size of the game. For example, "0–2 per 1,000 points" allows 4 in a 2,000 point draft.
 - **Unit Groups** limit how many of some units the role may have between them, like "0–3 of Knights or Questing Knights". Tap **Add unit group limit**, choose the units, and set the limits. They can scale per points too.
 
-**Traits & Composition:** tap **Configure *faction* Traits & Composition** to set up [traits](#traits) and role comparisons:
+**Traits & Composition:** tap **Configure *faction* Traits & Composition** to set up [traits](#traits) and the composition rules each variant brings:
 
 - **Add Trait** creates a trait. Name it, turn on **Allow multiple variants** if drafts can choose several, then add variants. You can also copy traits from another faction, or paste variants one per line with **Generate from clipboard**.
 - Tap a variant to edit it:
@@ -358,13 +361,13 @@ In the configuration you can edit the faction's name, its units in each role, it
   - Set a profile adjustment, like `M+1`, for units whose special rules include the trait in brackets, like `[Legion]`.
   - Add **Role Limits** that apply while it's chosen: a **percentage limit** caps how much of the army each unit in a role may be, and a **duplicate limit** caps how many units of the same name a role may have.
   - Turn on **Allow single restricted unit** to allow one unit the points would otherwise rule out, like a 0–1 per 1,000 points unit in a 750 point game.
-- **Add Role Comparison** checks roles against each other. For example, "Champions and Brutes must be at most equal to Gangers", with optional multipliers and extra allowances.
+  - Tap **Add Role Comparison** to check roles against each other while it's chosen. For example, Champions and Brutes at most as many as Gangers, with an optional multiplier and extra allowance. A comparison checks the draft, or the detachment, that chose the variant.
 
 To make a unit, option or item belong to a variant, put the variant's name in its requirements, like `Blood Angels`. The Add list and unit view then show or hide it to match each draft's choices.
 
 > Changes to a faction don't update drafts you've already made. Add the unit again to pick up the new settings.
 
-To configure a game system, tap its name in the Library to open it. Then tap the name at the top and choose **Configure Game System**, or tap **Edit**, then **Configure Game System**. There you'll find roles, default profiles, the armoury, Conditions, website lookups, and **Configure Traits** for traits every faction offers, like an allegiance. A faction's own trait with the same name takes the place of the game system's.
+To configure a game system, tap its name in the Library to open it. Then tap the name at the top and choose **Configure Game System**, or tap **Edit**, then **Configure Game System**. There you'll find roles, default profiles, the armoury, Conditions, website lookups, and **Configure Traits** for traits every faction offers, like an allegiance. Their variants can set role limits and role comparisons too, using the game system's roles. A faction's own trait with the same name takes the place of the game system's.
 
 ## Configure a unit {#configure-a-unit}
 
