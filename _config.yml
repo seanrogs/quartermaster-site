@@ -4,9 +4,7 @@ description: >-
   Quartermaster is the army list manager for tabletop miniature games that knows how to play nice.
   Draft armies for Warhammer: The Old World, Horus Heresy, Necromunda and more on iPhone and iPad.
 url: https://quartermaster.app
-# Temporary while the site is previewed at seanrogs.github.io/quartermaster-site.
-# Set back to "" when the custom domain quartermaster.app is switched on.
-baseurl: "/quartermaster-site"
+baseurl: ""
 timezone: Australia/Brisbane
 lang: en-AU
 

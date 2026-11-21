@@ -57,7 +57,7 @@ bundle install
 bundle exec jekyll serve --livereload
 ```
 
-Then open http://localhost:4000/quartermaster-site/ (or http://localhost:4000 once `baseurl` in `_config.yml` is back to `""` for quartermaster.app).
+Then open http://localhost:4000.
 
 ## Short links
 
