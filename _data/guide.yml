@@ -43,7 +43,6 @@
   items:
     - { id: summarize-or-publish-a-draft, title: Publish a PDF or summary }
     - { id: share-a-draft, title: Share a draft file }
-    - { id: keyboard-shortcuts, title: Keyboard shortcuts }
 - title: Making your own
   items:
     - { id: configure-a-faction, title: Configure a faction }

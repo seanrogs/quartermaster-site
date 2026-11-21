@@ -336,27 +336,6 @@ On Mac, the Publish menu shares each PDF straight away.
 
 To send the draft itself to another Quartermaster user, tap **Publish › Share Draft**, or tap the draft name and choose **Share Draft**. They need the same game system and faction installed to open it.
 
-## Keyboard shortcuts {#keyboard-shortcuts}
-
-With a keyboard on iPad or Mac, hold <kbd>⌘</kbd> to see what's available. Some useful ones in a draft:
-
-| Shortcut | Action |
-| --- | --- |
-| <kbd>⌘N</kbd> | New Draft for the open or most recent faction |
-| <kbd>⌘U</kbd> | Add Unit |
-| <kbd>⇧⌘R</kbd> | Publish as Roster Table |
-| <kbd>⌥⇧⌘C</kbd> | Publish as Cards, Arranged by Role |
-| <kbd>⇧⌘C</kbd> | Publish as Cards, Stack of Cards |
-| <kbd>⇧⌘O</kbd> | Publish as Detachment Overview |
-| <kbd>⇧⌘P</kbd> | Text Summary |
-| <kbd>⌥⇧⌘O</kbd> | View Detachment Overview |
-| <kbd>⌘D</kbd> | Duplicate Draft |
-| <kbd>⇧⌘E</kbd> | Edit and Rearrange |
-| <kbd>⌥X</kbd> | Collapse details |
-| <kbd>⌘,</kbd> | Reset all XP |
-| <kbd>⌘.</kbd> | Clear all Conditions |
-| <kbd>⌘Z</kbd> / <kbd>⇧⌘Z</kbd> | Undo / Redo |
-
 ## Configure a faction {#configure-a-faction}
 
 You can change any faction to fix a mistake, update points, or add new units.
