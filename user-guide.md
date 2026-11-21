@@ -75,9 +75,9 @@ Tap the **draft name** at the top of the Draft view to open the draft menu:
 | --- | --- |
 | **Rename** | Edit the draft's name in place. |
 | **Share Draft** | Send the draft file to another Quartermaster user. |
-| **Add Notes** | Add notes to the draft. |
+| **Add Notes…** | Add notes to the draft. |
 | **Theme…** | Give the draft its own colours. See [Themes](#themes). |
-| **Edit and Rearrange…** | Reorder or remove units and detachments. |
+| **Edit and Rearrange** | Reorder or remove units and detachments. |
 | **Duplicate Draft** | Make a copy and open it. Great for tracking a campaign over time, or trying a variation. |
 | **Delete Draft** | Delete the draft, after asking you to confirm. |
 
@@ -88,7 +88,7 @@ You can also work with drafts in the Faction view:
 
 ## Add notes to a draft {#add-notes-to-a-draft}
 
-Tap the draft name, then **Add Notes**. Draft notes are included in the draft's summary. To add notes to a single unit, see [Aliases, custom equipment and notes](#personalise-a-unit).
+Tap the draft name, then **Add Notes…**. Draft notes are included in the draft's summary. To add notes to a single unit, see [Aliases, custom equipment and notes](#personalise-a-unit).
 
 ## Undo changes {#undo}
 
@@ -125,7 +125,7 @@ If the draft has [traits](#traits) chosen, the Add list only shows units that su
 
 - **Duplicate:** swipe right on a unit, or touch and hold it and choose **Duplicate**. The copy is added to the same role.
 - **Delete:** swipe left on a unit, or touch and hold it and choose **Delete**. Changed your mind? [Undo](#undo).
-- **Rearrange:** drag a unit card to a new position in its role. Or tap the draft name, choose **Edit and Rearrange…**, and drag units using the handles.
+- **Rearrange:** drag a unit card to a new position in its role. Or tap the draft name, choose **Edit and Rearrange**, and drag units using the handles.
 - **Change Role:** touch and hold a unit and choose **Change Role** to move it to another role in the draft.
 - **Change Detachment:** for a unit inside a detachment, touch and hold it and choose **Change Detachment** to move it to the same role in another detachment.
 
@@ -227,7 +227,7 @@ Give each draft its own colours. Tap the draft name, then **Theme…**:
 2. Choose a **base** colour and a **trim** colour. Quartermaster warns you if the trim may be hard to read on the base.
 3. Turn on **Shade** to always show the draft in Dark Mode with the theme.
 
-A theme tints the draft's cards and Add button, and the draft's row in Recent Drafts. If a [trait](#traits) variant has its own colours, the draft uses those automatically, and your own theme replaces them. Changed your mind while editing? Tap **Undo** in the theme editor, or shake your iPhone.
+A theme tints the draft's cards, its units and detachments, its Add button, its rows in Recent Drafts and the Faction view, and its summary and published PDFs. If a [trait](#traits) variant has its own colours, the draft uses those automatically, and your own theme replaces them. Changed your mind while editing? Tap **Undo** in the theme editor, or shake your iPhone.
 
 ## Points breakdown {#points-breakdown}
 
@@ -286,9 +286,12 @@ There's a full walkthrough in [Using Horus Heresy Detachments]({{ '/post/7931018
 Conditions track what happens to units during a game, like a destroyed unit or a fighter in recovery. Every game system has a **Destroyed** condition. Systems such as Necromunda and Warhammer: The Old World include more detailed sets.
 
 - **Set Conditions:** touch and hold a unit in the Draft view and choose **Conditions**. Or open the unit and tap the **Set Conditions** button (the heart) in the bottom toolbar.
+- Some Conditions can be applied more than once, like one for each objective a unit holds. Open them in the menu and tap **Add** or **Remove**.
+- Conditions only meant for some [trait](#traits) variants are left out of the menu.
 - Conditions are shown as badges on the unit card. Destroyed units are dimmed and collapsed to reduce clutter.
-- If the game system awards **victory points** for Conditions, tap the **Campaign** button (the trophy) in the Draft view to see the running total.
-- To start a new game, tap **Campaign › Clear all Conditions**.
+- To clear one unit, choose **Clear Conditions** at the end of its Conditions menu.
+- If the game system awards **victory points** for Conditions, tap the **Campaign** button (the trophy) in the Draft view to see the running totals, for you and for your opponent.
+- To start a new game, tap **Campaign › Clear all Conditions**. When the game system awards victory points, it's in the menu under each total.
 
 See [Conditions and Victory Points]({{ '/post/773086704386113536/conditions-and-victory-points' | relative_url }}) for a worked example.
 
@@ -299,6 +302,7 @@ Track experience for campaign games.
 - Open the unit and tap the **campaign tracking** button in the bottom-left corner to show the XP stepper. Once a unit has XP, the button shows its total instead.
 - Tap the XP total for **Reset** and **Collapse**.
 - In the Draft view, touch and hold a unit and tap **+1 XP** for a quick boost.
+- Tap the **Campaign** button (the trophy) in the Draft view to see the draft's total XP. Tap the total, then **Reset all XP**, to start the campaign again.
 
 XP is shown in the top-right corner of the unit's card.
 
@@ -311,13 +315,22 @@ If the game system has a [website lookup](#advanced-game-and-faction-editing), y
 
 ## Publish a PDF or summary {#summarize-or-publish-a-draft}
 
-In the Draft view, tap the **Publish** button in the toolbar:
+In the Draft view, tap the **Publish** button in the toolbar.
 
-- **Publish to PDF › as Roster Table** is a traditional table layout, best for event submissions and printing.
-- **Publish to PDF › as Cards** shows each unit as a card, like the Draft view, which is best for quick reference during games.
-- **View Summary** gives a short text summary with only the options you've chosen. It's perfect for forums, messages or sending to an event organiser.
+Under **Publish to PDF**:
 
-In the PDF preview you can mark up, print, or share to other apps.
+- **as Roster Table** is a traditional table layout, best for event submissions and printing.
+- **as Cards** shows each unit as a card, like the Draft view, which is best for quick reference during games. Choose **Arranged by Role** to group the cards under a heading for each role, or **Stack of Cards** to pack them in columns.
+- **as Detachment Overview** draws a single page showing how the draft's [detachments](#detachments) fit together, with lines joining each detachment to what unlocks it or [links](#links) to it. It's offered when a draft has more than one detachment.
+
+Every PDF has a header with the draft's name, faction, chosen [trait](#traits) variants and points, and prints on A4 or US Letter to suit your region. In the PDF preview you can mark up, print, or share to other apps.
+
+Under **Overview**:
+
+- **Text Summary** gives a short summary with only the options you've chosen. It's perfect for forums, messages or sending to an event organiser. Tap **Share** to send it as an image, as text, or as Markdown.
+- **Detachment Overview** shows the detachment overview as an image. Pinch or double-tap to zoom, and tap **Share** to send it.
+
+On Mac, the Publish menu shares each PDF straight away.
 
 ## Share a draft file {#share-a-draft}
 
@@ -329,11 +342,18 @@ With a keyboard on iPad or Mac, hold <kbd>⌘</kbd> to see what's available. Som
 
 | Shortcut | Action |
 | --- | --- |
-| <kbd>⌃⌘P</kbd> | Publish as Roster Table |
-| <kbd>⌥⌘P</kbd> | Publish as Cards |
-| <kbd>⇧⌘P</kbd> | View Summary |
+| <kbd>⌘N</kbd> | New Draft for the open or most recent faction |
+| <kbd>⌘U</kbd> | Add Unit |
+| <kbd>⇧⌘R</kbd> | Publish as Roster Table |
+| <kbd>⌥⇧⌘C</kbd> | Publish as Cards, Arranged by Role |
+| <kbd>⇧⌘C</kbd> | Publish as Cards, Stack of Cards |
+| <kbd>⇧⌘O</kbd> | Publish as Detachment Overview |
+| <kbd>⇧⌘P</kbd> | Text Summary |
+| <kbd>⌥⇧⌘O</kbd> | View Detachment Overview |
 | <kbd>⌘D</kbd> | Duplicate Draft |
 | <kbd>⇧⌘E</kbd> | Edit and Rearrange |
+| <kbd>⌥X</kbd> | Collapse details |
+| <kbd>⌘,</kbd> | Reset all XP |
 | <kbd>⌘.</kbd> | Clear all Conditions |
 | <kbd>⌘Z</kbd> / <kbd>⇧⌘Z</kbd> | Undo / Redo |
 
@@ -364,6 +384,10 @@ In the configuration you can edit the faction's name, its units in each role, it
   - Tap **Add Role Comparison** to check roles against each other while it's chosen. For example, Champions and Brutes at most as many as Gangers, with an optional multiplier and extra allowance. A comparison checks the draft, or the detachment, that chose the variant.
 
 To make a unit, option or item belong to a variant, put the variant's name in its requirements, like `Blood Angels`. The Add list and unit view then show or hide it to match each draft's choices.
+
+- Separate variants with `/` to allow any of them, like `Blood Angels / Imperial Fists`.
+- Start with `not`, `no` or `!` to rule a variant out, like `not Blood Angels`.
+- Conditions can use variant requirements too, so a game system can offer different Conditions to different variants.
 
 > Changes to a faction don't update drafts you've already made. Add the unit again to pick up the new settings.
 
@@ -454,7 +478,15 @@ For Command options, use **included in unit size** to differentiate between a mo
 
 **Detachment definitions:** set a unit's size type to **detachment definition** to make it a Detachment that other units are added into. Detachment definitions are marked with a flag icon in the faction's role list to differentiate them from normal units.
 
-**Conditions:** in a game system's configuration, under **Unit Conditions**, tap **Add a set of Conditions**. Each Condition can shade the unit, show up separately in totals, and award victory points, either fixed or as a percentage of the unit's cost, to you or your opponent.
+**Conditions:** in a game system's configuration, under **Unit Conditions**, tap **Add a set of Conditions**. Only one Condition from each set can be applied to a unit at a time. Each Condition can:
+
+- have **requirements**, one per line, so it's only offered to units that meet them, like a [trait](#traits) variant
+- **Apply more than once**, for things a unit can have several of, like objectives held
+- **Apply shade**, to dim the unit in the Draft view, like when it's destroyed
+- **Break out in totals**, to show the total cost of units with the Condition in the points breakdown
+- award victory points to you or your opponent (**VP awarded to**), as a set value, a percentage of the unit's points, or both
+
+Conditions are told apart by label and requirements. Two Conditions can share a label if their requirements differ, and Quartermaster offers whichever suits the unit. Tap **Edit** to reorder or delete Conditions.
 
 **Website lookup:** in a game system's configuration, enter a **Lookup URL** for a rules website. Use `%@` where the search term goes, for example `https://example.com/search?q=%@`.
 
